@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:url(background.jpg);
+            background-size: cover;
+            background-repeat:no-repeat;
+            font-family:sans-serif;
+        }
+        .loginbox{
+            width:320px;
+            height:340px;
+            background:rgba(0, 0, 0, 0.5);
+            color:#fff;
+            position: absolute;
+            top:50%;
+            left:50%;
+            box-sizing: border-box;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 1px 6px , 0 1px 6px;
+        }
+        #profile{
+            width:120px;
+            height:120px;
+            border-radius: 50%;
+            position:relative;
+            top:-60px;
+            left:calc(( 320px - 120px)/2);
+            filter:grayscale(100%)
+        }
+        h2{
+            font-family:serif;
+            text-shadow:-2px 2px 1px black;
+            color:pink;
+            font-size:35px;
+            text-align:center;
+            text-transform:uppercase;
+            word-spacing: 10px;
+            margin-top:-50px;
+            margin-bottom:40px;
+        }
+        .input{
+            width:calc(100% - 20px);
+            height:30px;
+            display:block;
+            margin:auto;
+        }
+        #button{
+            width:calc(100% - 20px);
+            height:30px;
+            display:block;
+            margin:auto;
+            background-color:pink;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginbox">
+        <img src="avatar.png" id="profile">
+        <h2>User Login</h2>
+        <form>
+            <div>
+            <input type="email" name="email" id="email" class="input" placeholder="&nbsp;Email or User Name"></div>
+            <br> 
+            <div>
+                <input type="password" name="password" class="input" id="password" placeholder="&nbsp;Password">
+                <div>&nbsp;&nbsp;Forget Password?</div>
+            </div>
+            <br>
+            <div>
+                <input type="submit" id="button" name="submit" value="LOGIN">
+            </div>
+        </form>
+        
+     
+
+    </div>
+    
+</body>
+</html>
