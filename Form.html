@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        table{
+            border:5px outset black;
+            background:url(form.jpg);
+            color:white;
+            font-style:bold; 
+            font-size:larger;
+        }
+        td{
+         border:2px solid black;
+        }
+        body{
+            background-color:gainsboro;
+        }
+        .button{
+            border:5px outset red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table cellspacing="0" cellpadding="10" height="100%" align="center">
+           <tr>
+               <td>Customer ID : </td>
+               <td><input type="text" name="ID"></td>
+           </tr>
+           <tr>
+               <td>Customer name : </td>
+               <td><input type="text" name="name"></td>
+           </tr>
+           <tr>
+               <td>Password : </td>
+               <td><input type="text" name="password"></td>
+           </tr>
+           <tr>
+               <td>Gender : </td>
+               <td><input type="radio" name="gender" checked >Male<br>
+                <input type="radio" name="gender">Female<br>
+                <input type="radio"name="gender">other</td>
+           </tr>
+           <tr>
+               <td>Interest</td>
+               <td><input type="checkbox"name="Interest">Database<br>
+                <input type="checkbox"name="Interest">Computer Network<br>
+                <input type="checkbox"name="Interest">HTML</td>
+           </tr>
+           <tr>
+               <td>Choose Your<br>State:</td>
+               <td><select name="state"id="state">
+                   <option value="1">Andhra Pradesh</option>
+                   <option value="2">Andaman and Nicobar</option>
+                   <option value="3">Arunachal Pradesh </option>
+                   <option value="4">Assam</option>
+                   <option value="5">Bihar</option>
+                   <option value="6">Chandigarh</option>
+                   <option value="7">Chhatitsgarh</option>
+                   <option value="8">Dadar and Nagar Haveli</option>
+                   <option value="9">Daman and diu</option>
+                   <option value="10">Delhi</option>
+                   <option value="11">Lakshadweep</option>
+                   <option value="12">Puducherry</option>
+                   <option value="13">Goa</option>
+                   <option value="14">Gujarat</option>
+                   <option value="15">Himachal Pradesh</option>
+                   <option value="16">Haryana</option>
+                   <option value="17">Jammu and Kashmir</option>
+                   <option value="18">Jharkhand</option>
+                   <option value="19">Karnataka</option>
+                   <option value="20">Kerala</option>
+                   <option value="21">Madhya Pradesh</option>
+                   <option value="22">Manipur</option>
+                   <option value="23">Meghalaya</option>
+                   <option value="24">Mizoram</option>
+                   <option value="25">Nagaland</option>
+                   <option value="26">Odisha</option>
+                   <option value="27">Punjab</option>
+                   <option value="28">Rajasthan</option>
+                   <option value="29">Sikkim</option>
+                   <option value="30">Tamil Nadu</option>
+                   <option value="31">Telangana</option>
+                   <option value="32">Tripura</option>
+                   <option value="33">Uttar Pradesh</option>
+                   <option value="34">Uttarakhand</option>
+                   <option value="35">West Bengal</option>
+               </select> </td>
+           </tr>
+           <tr>
+               <td>Choose your<br>City:</td>
+               <td><select name="city" id="city">
+                   <option value="a">Agra</option>
+                   <option value="a">Bhopal</option>
+                   <option value="a">Gwalior</option>
+                   <option value="a">Bhopal</option>
+                   <option value="a">Indore</option>
+                   <option value="a">jabalpur</option>
+                   <option value="a">Sagar</option>
+                   <option value="a">Rewa</option>
+               </select></td>
+           </tr>
+           <tr>
+               <td>Customer Photo:</td>
+               <td><label for="img"></label>
+            <input type="file" id="img" name="img" accept="image/*"> </td>
+           </tr>
+           <tr>
+               <td>Any suggestion:</td>
+               <td><textarea name="My text" cols="30" rows="5"></textarea> </td>
+           </tr>
+           <tr>
+               <td colspan="2"><input type="Submit" class="button" value="Submit">&nbsp;<input type="reset" class="button" value="Reset Now"></td>
+           </tr>
+
+        </table>
+    </form>
+    
+</body>
+</html>
